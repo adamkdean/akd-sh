@@ -4,9 +4,6 @@
     "siteUrl": "http://akd.sh",
     "description": "software engineering"
   },
-  "globalEvents": [
-    "global"
-  ],
   "server": {
     "host": "127.0.0.1",
     "port": 3001
