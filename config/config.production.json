@@ -6,7 +6,7 @@
   },
   "server": {
     "host": "127.0.0.1",
-    "port": 3001
+    "port": 80
   },
   "cluster": false,
   "paths": {
@@ -15,6 +15,6 @@
     "pages": "workspace/pages",
     "public": "workspace/public"
   },
-  "allowJsonView": true,
-  "debug": true
+  "allowJsonView": false,
+  "debug": false
 }
