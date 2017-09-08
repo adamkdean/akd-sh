@@ -1,5 +1,9 @@
 {>"partials/header" /}
 
+{<metaTitle}
+	{global.site} – {global.description}
+{/metaTitle}
+
 {#posts.results}
 	{>"partials/post" /}
 {/posts.results}
