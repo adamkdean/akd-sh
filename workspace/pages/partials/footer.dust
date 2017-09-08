@@ -1,5 +1,7 @@
 <footer>
-  &#x26A1; Powered by <a href="https://dadi.tech/platform/web">DADI Web {version}</a><br>© {@formatDate unix=global.timestamp format="YYYY" /}
+  <div>Made with <span class="fa fa-heart"></span> by <a href="https://twitter.com/imdsm">Adam K Dean</a></div>
+  <div>&middot;</div>
+  <div>Powered by <a href="https://dadi.tech/platform/web">DADI Web {version}</a></div>
 </footer>
 
 </body>

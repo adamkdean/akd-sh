@@ -1,6 +1,7 @@
 {
   "global": {
-    "site": "akd.sh",
+    "site": "~/akd.sh",
+    "siteUrl": "http://akd.sh",
     "description": "software engineering"
   },
   "globalEvents": [

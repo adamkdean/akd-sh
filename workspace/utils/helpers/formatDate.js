@@ -1,5 +1,7 @@
-var dust = require("dustjs-linkedin")
-var moment = require("moment")
+'use strict'
+
+const dust = require('dustjs-linkedin')
+const moment = require('moment')
 
 /*
 * Returns the supplied 'data' parameter formatted using the supplied 'format' parameter

@@ -17,7 +17,7 @@
     ],
     "requestParams": [
       {
-        "param": "handle", "field": "_id"
+        "param": "handle", "field": "slug"
       }
     ]
   }

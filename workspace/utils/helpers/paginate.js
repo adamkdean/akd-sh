@@ -1,5 +1,7 @@
-var dust = require("dustjs-linkedin")
-var _ = require("underscore")
+'use strict'
+
+const _ = require('underscore')
+const dust = require('dustjs-linkedin')
 
 /*
 * Paginate pages
@@ -21,20 +23,20 @@ var _ = require("underscore")
 dust.helpers.paginate = function(chunk, context, bodies, params) {
   var err
 
-  if (!("page" in params && "totalPages" in params && "path" in params)) {
-    err = new Error("Insufficient information provided to @paginate helper")
+  if (!('page' in params && 'totalPages' in params && 'path' in params)) {
+    err = new Error('Insufficient information provided to @paginate helper')
   }
 
   var current = parseInt(params.page, 10)
   var totalPages = parseInt(params.totalPages, 10)
 
   if (!(isFinite(current) && isFinite(totalPages))) {
-    err = new Error("Parameters provided to @paginate helper are not integers")
+    err = new Error('Parameters provided to @paginate helper are not integers')
   }
 
   var paginateContext = {
     n: current,
-    path: ""
+    path: ''
   }
 
   if (err) {
@@ -50,7 +52,7 @@ dust.helpers.paginate = function(chunk, context, bodies, params) {
 
     if (n === 1) {
       // this is to make the path just the base path, without the number
-      paginateContext.path = (paginateContext.path || "").replace(/1\/?$/, "")
+      paginateContext.path = (paginateContext.path || '').replace(/1\/?$/, '')
     }
 
     chunk.render(body, context)
@@ -59,7 +61,7 @@ dust.helpers.paginate = function(chunk, context, bodies, params) {
   var printGap = bodies.gap ? printStep.bind(null, bodies.gap) : function() {}
 
   function printStepOrGap(step) {
-    if (step === ".") {
+    if (step === '.') {
       printGap()
     } else {
       printStep(bodies.block, step)
@@ -91,7 +93,7 @@ dust.helpers.paginate = function(chunk, context, bodies, params) {
     var stepSize
     var steps = []
 
-    if (tightness === "increase") {
+    if (tightness === 'increase') {
       now = start
       final = end
       while (now < final) {
@@ -102,7 +104,7 @@ dust.helpers.paginate = function(chunk, context, bodies, params) {
         stepSize = getStepSize(final - now)
 
         if (stepSize > 1) {
-          steps.push(".")
+          steps.push('.')
         }
 
         now += stepSize
@@ -120,7 +122,7 @@ dust.helpers.paginate = function(chunk, context, bodies, params) {
         stepSize = getStepSize(now - final)
 
         if (stepSize > 1) {
-          steps.push(".")
+          steps.push('.')
         }
 
         now -= stepSize
@@ -148,7 +150,7 @@ dust.helpers.paginate = function(chunk, context, bodies, params) {
     // First step
     printStep(bodies.block, 1)
     // Pre current
-    _.each(makeSteps(1, current, "increase"), printStepOrGap)
+    _.each(makeSteps(1, current, 'increase'), printStepOrGap)
   }
 
   // Current
@@ -156,7 +158,7 @@ dust.helpers.paginate = function(chunk, context, bodies, params) {
 
   if (current < totalPages) {
     // Post current
-    _.each(makeSteps(current, totalPages, "decrease"), printStepOrGap)
+    _.each(makeSteps(current, totalPages, 'decrease'), printStepOrGap)
     // Last step
     printStep(bodies.block, totalPages)
     // Next

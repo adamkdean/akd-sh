@@ -1,7 +1,6 @@
-var dust = require("dustjs-linkedin")
+'use strict'
 
-// Core helpers
-require("dustjs-helpers")
+const dust = require('dustjs-linkedin')
 
-// DADI helpers
-require("@dadi/dustjs-helpers")
+require('dustjs-helpers')
+require('@dadi/dustjs-helpers')

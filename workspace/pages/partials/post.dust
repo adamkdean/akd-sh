@@ -1,11 +1,11 @@
 <article>
   <header>
-    <h2><a href="/post/{attributes._id}">{attributes.title}</a></h2>
+    <h2><a href="/post/{attributes.slug}">{attributes.title}</a></h2>
     <p>
-      By <strong>{attributes.author}</strong> on <time datetime="{attributes.date}">
+      By <strong>Adam K Dean</strong> on <time datetime="{attributes.date}">
         {@formatDate
           data=attributes.date
-          parseFormat="YYYY-DD-MMMTh:mm:ss.ZZ"
+          parseFormat="YYYY-MM-DD hh:mm:ss"
           format="MMMM Do, YYYY"
         /}
       </time>
@@ -13,4 +13,8 @@
   </header>
 
   {contentHtml|s}
+  
+  <footer>
+    Permalink: <a href="{global.siteUrl}/post/{attributes.slug}">{global.siteUrl}/post/{attributes.slug}</a>
+  </footer>
 </article>
