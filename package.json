@@ -1,0 +1,18 @@
+{
+  "name": "akd-sh",
+  "version": "0.0.1",
+  "description": "Personal website powered by DADI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamkdean/akd-sh.git"
+  },
+  "author": "Adam K Dean <akd@dadi.co>",
+  "license": "ISC",
+  "dependencies": {
+    "@dadi/web": "^3.1.0"
+  }
+}
