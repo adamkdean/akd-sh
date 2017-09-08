@@ -1,7 +1,7 @@
 {
   "global": {
-    "site": "Your site name",
-    "description": "An exciting beginning."
+    "site": "akd.sh",
+    "description": "software engineering"
   },
   "globalEvents": [
     "global"
