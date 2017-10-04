@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/adamkdean
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://akd.sh
+  * I am adamkdean (https://keybase.io/adamkdean) on keybase.
+  * I have a public key ASAIWq8Le8jlV7Ok-UP3Mtnwtl10nsjw84iBdTqWHA7Rkwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120085aaf0b7bc8e557b3a4f943f732d9f0b65d749ec8f0f38881753a961c0ed1930a",
+      "host": "keybase.io",
+      "kid": "0120085aaf0b7bc8e557b3a4f943f732d9f0b65d749ec8f0f38881753a961c0ed1930a",
+      "uid": "36a6586640834c7989e180287571ca19",
+      "username": "adamkdean"
+    },
+    "merkle_root": {
+      "ctime": 1507140263,
+      "hash": "83b7338cdb60639893ee6451291d296bce6f6caf99cd676e90798a16ba38f41ea6e3e2faf0e5839b9a88465a408b72c2af3a5d92f13d3b188f968a77f65478dd",
+      "hash_meta": "2bd705941a70a4307d25c773ff32d093ad8e32cff2e24c7925d24f45a6c4285a",
+      "seqno": 1496399
+    },
+    "service": {
+      "hostname": "akd.sh",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1507140276,
+  "expire_in": 504576000,
+  "prev": "f8eb84f5d9871d5d6f8e6d6d9abfcad5114f1399ef4e02f20cdda6708d4f67f0",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCFqvC3vI5VezpPlD9zLZ8LZddJ7I8POIgXU6lhwO0ZMKp3BheWxvYWTFAz57ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMDg1YWFmMGI3YmM4ZTU1N2IzYTRmOTQzZjczMmQ5ZjBiNjVkNzQ5ZWM4ZjBmMzg4ODE3NTNhOTYxYzBlZDE5MzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwMDg1YWFmMGI3YmM4ZTU1N2IzYTRmOTQzZjczMmQ5ZjBiNjVkNzQ5ZWM4ZjBmMzg4ODE3NTNhOTYxYzBlZDE5MzBhIiwidWlkIjoiMzZhNjU4NjY0MDgzNGM3OTg5ZTE4MDI4NzU3MWNhMTkiLCJ1c2VybmFtZSI6ImFkYW1rZGVhbiJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUwNzE0MDI2MywiaGFzaCI6IjgzYjczMzhjZGI2MDYzOTg5M2VlNjQ1MTI5MWQyOTZiY2U2ZjZjYWY5OWNkNjc2ZTkwNzk4YTE2YmEzOGY0MWVhNmUzZTJmYWYwZTU4MzliOWE4ODQ2NWE0MDhiNzJjMmFmM2E1ZDkyZjEzZDNiMTg4Zjk2OGE3N2Y2NTQ3OGRkIiwiaGFzaF9tZXRhIjoiMmJkNzA1OTQxYTcwYTQzMDdkMjVjNzczZmYzMmQwOTNhZDhlMzJjZmYyZTI0Yzc5MjVkMjRmNDVhNmM0Mjg1YSIsInNlcW5vIjoxNDk2Mzk5fSwic2VydmljZSI6eyJob3N0bmFtZSI6ImFrZC5zaCIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzMifSwiY3RpbWUiOjE1MDcxNDAyNzYsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiZjhlYjg0ZjVkOTg3MWQ1ZDZmOGU2ZDZkOWFiZmNhZDUxMTRmMTM5OWVmNGUwMmYyMGNkZGE2NzA4ZDRmNjdmMCIsInNlcW5vIjo2LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQCm2cAHv8Gsuup/ubMHCHPWcZ18k7FWBssTEthS6XYHvtQ6eerfpgpFMDF6NCD7VQKHEN5AiLXbRyCtpixsRMQ2oc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDnedNaXYE9Y8rT06sTzrHxNBZ7ERwj2AhM9z/uBTdRlqN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/adamkdean
+
+==================================================================
