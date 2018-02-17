@@ -28,6 +28,6 @@ module.exports = function (app) {
 module.exports.Middleware = Middleware
 ```
 
-Protip: `enchilada` looks inside the `src` directory for a subsequent `js` directory. No need to specify `public/js` etc.
+Protip: `enchilada` looks inside the `src` directory for a subsequent `js` directory.
 
 Learn more about [DADI Web](https://dadi.tech/en/web/).
