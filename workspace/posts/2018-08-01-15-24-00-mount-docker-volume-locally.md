@@ -30,9 +30,10 @@ RUN ln -s /local /volume
 CMD ["/bin/sh"]
 ```
 
-In this dockerfile you can see that we create a directory (later to be used as a mount point), and then we create a symlink directory pointing to the same place. Don't forget to build the image `docker build -t arthurs-backdoor .`.
+In this dockerfile you can see that we create a directory (later to be used as a mount point), and then we create a symlink directory pointing to the same place.
 
 ```
+$ docker build -t arthurs-backdoor .
 $ docker volume create my_precious_data
 $ docker run -d -v my_precious_data:/volume -v $(pwd)/my_precious_data:/local arthurs_backdoor
 ```
