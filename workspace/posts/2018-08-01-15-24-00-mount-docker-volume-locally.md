@@ -6,7 +6,7 @@ date: 2018-08-01 15:24
 
 Here is something that's cool.
 
-You can have a docker volume, `docker volume create example`, and you can mount these volumes to containers, `docker run -v example:/path image`. You can also mount local directories to containers, `docker run -v $(pwd)/local:/path image`. But something you can't do, is mount a local directory to volume.
+You can have a docker volume, `docker volume create example`, and you can mount this volume to a container, `docker run -v example:/path image`. You can also mount local directories to containers, `docker run -v $(pwd)/local:/path image`. But something you can't do, is mount a local directory to volume.
 
 Scenario: you have a volume, you have a container using that volume, and you have some software that needs to access that volume data locally, outside of docker.
 
