@@ -16,7 +16,9 @@ Nor can you mount two things to the same place.
 
 🚫`docker run -v example:/example -v $(pwd)/local:/example image` isn't going to work either.
 
-The solution is to use intermediate symlinked container. I call this solution "Arthur's Backdoor".
+The solution is to use intermediate symlinked container.
+
+I call this solution "Arthur's Backdoor". (Created for [AM](https://twitter.com/ArthurMingard))
 
 ```
 #
