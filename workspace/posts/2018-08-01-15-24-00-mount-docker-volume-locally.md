@@ -27,7 +27,7 @@ I call this solution "Arthur's Backdoor". (Created for [AM](https://twitter.com/
 FROM busybox
 RUN mkdir /volume
 RUN ln -s /local /volume
-CMD ["/bin/sh"]
+CMD tail -f /dev/null
 ```
 
 In this dockerfile you can see that we create a directory (later to be used as a mount point), and then we create a symlink directory pointing to the same place.
@@ -41,3 +41,5 @@ $ docker run -d -v my_precious_data:/volume -v $(pwd)/my_precious_data:/local ar
 We create a volume `my_precious_data`, then we run the backdoor, first mounting the volume `my_precious_data` to the container path `/volume`, and then mounting the local directory `$(pwd)/my_precious_data` to the container path `/local` which as we saw, is actually `/volume`.
 
 Now you have mounted a docker volume to your local filesystem.
+
+**Update:** I realised today that the original dockerfile wouldn't stay alive. I therefore changed the CMD to `CMD tail -f /dev/null` to keep the container alive. Thanks to [bigdatums.net](http://bigdatums.net/2017/11/07/how-to-keep-docker-containers-running/) for that snippet.
